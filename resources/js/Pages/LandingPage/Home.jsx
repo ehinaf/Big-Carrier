@@ -11,11 +11,12 @@ import Testimoni from "@/Components/Testimoni";
 import Blog from "@/Components/Blog";
 import Footer from "@/Layouts/LandingPage/Footer";
 
-const Home = () => {
+const Home = (props) => {
+    console.log(props);
     return (
         <>
             <Head title="Home" />
-            <Header />
+            <Header auth={props.auth} />
             <Hero />
             <PopularCategories />
             <div className="grid grid-cols-3 px-52 py-20 gap-5">
